@@ -8,7 +8,7 @@
 
 {% block body %}
 <div class="content">
-    <h1 style="text-align: center">Predict Your chances for Admission</h1>
+    <h1 style="text-align: center">Predict Your chances for University Admission</h1>
 
     <div class="form">
         <form action="/predict" method="POST">
@@ -17,11 +17,11 @@
             <input type="number" name="university_rating" id="university_rating" placeholder="University Rating">
             <input type="number" name="sop" id="sop" placeholder="SOP Score">
             <input type="number" name="lor" id="lor" placeholder="LOR Score">
-            <input type="number" name="cgpa" id="cgpa"placeholder="CGPA" step="any">
-            <select name="research" id="research">
+            <input type="number" name="cgpa" id="cgpa"placeholder="CGPA" step="any"><br>
+            Any Research Done ? <select name="research" id="research">
   <option value="yes">Yes</option>
   <option value="no">No</option>
-</select>
+</select><br>
             <input type="submit" value="Predict">
         </form>
     </div>
